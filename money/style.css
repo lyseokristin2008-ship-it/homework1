@@ -166,6 +166,9 @@ a.btn { display: block; text-align: center; text-decoration: none; line-height: 
 
 .tbank-block { margin-top: 16px; }
 
+.yoomoney-block { margin-top: 16px; }
+.yoomoney-block .btn.big { margin-top: 0; }
+
 /* Номер */
 .phone-block {
   margin-top: 18px;

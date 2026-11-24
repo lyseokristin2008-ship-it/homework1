@@ -6,6 +6,11 @@
   var PHONE_RAW = "+79528363844";
   var COUNTER_KEY = "bear_money_cuteness";
 
+  // Ссылка на «Визитку для сбора денег» ЮMoney.
+  // Вставь сюда свою ссылку вида https://yoomoney.ru/to/410011XXXXXXXXXX —
+  // и кнопка «Оплатить из любого банка» появится на странице сама.
+  var YOOMONEY_URL = "";
+
   var toastEl = document.getElementById("toast");
   var hintEl = document.getElementById("hint");
   var counterEl = document.getElementById("counterValue");
@@ -146,6 +151,18 @@
     qrImg.parentNode.style.display = "none";
     qrNote.textContent = "QR пока не загрузился — просто переведи по номеру выше 💗";
   });
+
+  /* ---------- Кнопка ЮMoney (появляется только если задана ссылка) ---------- */
+  var yooBlock = document.getElementById("yoomoneyBlock");
+  var yooBtn = document.getElementById("yoomoneyBtn");
+  if (yooBlock && yooBtn) {
+    if (YOOMONEY_URL) {
+      yooBtn.href = YOOMONEY_URL;
+      yooBlock.hidden = false;
+    } else {
+      yooBlock.hidden = true;
+    }
+  }
 
   /* ---------- Старт ---------- */
   renderCounter();
