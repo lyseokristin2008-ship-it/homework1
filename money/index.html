@@ -41,27 +41,41 @@
       <p class="sub">Мишка копит на мёд и обнимашки 🍯💕</p>
     </header>
 
-    <section class="amounts" id="amounts" aria-label="Выбери сумму">
+    <section class="steps">
+      <p class="steps-title">Скинуть можно из любого банка 🌸</p>
+      <ol class="steps-list">
+        <li>Открой приложение <b>своего</b> банка</li>
+        <li>Переводы → <b>СБП</b> → <b>по номеру телефона</b></li>
+        <li>Введи номер ниже и любую сумму</li>
+      </ol>
+    </section>
+
+    <section class="amounts" id="amounts" aria-label="Подсказка по сумме">
       <button class="btn heart" data-sum="10" type="button">10 ₽</button>
       <button class="btn heart" data-sum="50" type="button">50 ₽</button>
       <button class="btn heart" data-sum="100" type="button">100 ₽</button>
     </section>
-    <p class="hint" id="hint">Тыкни на сумму — мишка подскажет, куда переводить 🌸</p>
+    <p class="hint" id="hint">Тыкни на сумму — номер скопируется, и мишка подскажет шаги 🌸</p>
 
     <section class="phone-block">
-      <span class="phone-label">Перевести по СБП на номер:</span>
+      <span class="phone-label">СБП по номеру телефона (подходит любой банк):</span>
       <div class="phone-row">
         <span class="phone" id="phone">+7 952 836-38-44</span>
         <button class="btn mini" id="copyPhone" type="button">Скопировать 💗</button>
       </div>
     </section>
 
+    <section class="tbank-block">
+      <a class="btn big" id="tbankBtn" href="https://www.tbank-online.com/rm/r_HQYVSnlAQt.xzKtRSnbsC/9dp1f53893" target="_blank" rel="noopener">У меня Т-Банк → открыть перевод 🐻</a>
+      <p class="qr-note">Ссылка и QR работают только в приложении <b>Т-Банка</b>. Если банк другой — переводи по номеру телефона выше 💕</p>
+    </section>
+
     <section class="qr-block">
-      <p class="qr-title">Или отсканируй QR 🌸</p>
+      <p class="qr-title">QR-код (для Т-Банка) 🌸</p>
       <div class="qr-frame">
         <img id="qrImg" src="qr.jpg" alt="QR-код для перевода мишке" width="240" height="240">
       </div>
-      <p class="qr-note" id="qrNote">Открой банк → «Оплата по QR» → наведи камеру.</p>
+      <p class="qr-note" id="qrNote">Открой Т-Банк → «Оплата по QR» → наведи камеру. Из другого банка — переводи по номеру телефона.</p>
     </section>
 
     <button class="btn big" id="doneBtn" type="button">Я скинул(а)! 🐾</button>

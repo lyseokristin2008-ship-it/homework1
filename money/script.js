@@ -80,8 +80,8 @@
     if (!button) return;
     var sum = button.getAttribute("data-sum");
     copyPhone(function () {
-      toast("Открывай банк → СБП на " + PHONE_PRETTY + " → " + sum + " ₽ 🐻");
-      hintEl.textContent = "Мишка уже облизывается 🍯 Сумма: " + sum + " ₽";
+      toast("Номер " + PHONE_PRETTY + " скопирован! Открой свой банк → СБП → по номеру → " + sum + " ₽ 🐻");
+      hintEl.textContent = "СБП из любого банка → по номеру → " + sum + " ₽ 🍯";
       spawnHearts(6);
     });
   });
