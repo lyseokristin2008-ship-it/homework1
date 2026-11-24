@@ -9,7 +9,7 @@
   // Ссылка на «Визитку для сбора денег» ЮMoney.
   // Вставь сюда свою ссылку вида https://yoomoney.ru/to/410011XXXXXXXXXX —
   // и кнопка «Оплатить из любого банка» появится на странице сама.
-  var YOOMONEY_URL = "";
+  var YOOMONEY_URL = "https://yoomoney.ru/to/4100119694488692";
 
   var toastEl = document.getElementById("toast");
   var hintEl = document.getElementById("hint");
