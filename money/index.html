@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скинь мишке денюжку 🐻</title>
+  <meta name="description" content="Мишка копит на мёд и обнимашки — скинь ему денюжку по СБП 💕">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts-bg" id="heartsBg" aria-hidden="true"></div>
+
+  <main class="card">
+    <header class="hero">
+      <div class="bear" aria-hidden="true">
+        <svg viewBox="0 0 200 210" role="img" aria-label="Милый мишка с сердечком">
+          <circle cx="52" cy="54" r="27" fill="#e9b98e"/>
+          <circle cx="148" cy="54" r="27" fill="#e9b98e"/>
+          <circle cx="52" cy="54" r="14" fill="#f9dcc2"/>
+          <circle cx="148" cy="54" r="14" fill="#f9dcc2"/>
+          <ellipse cx="100" cy="108" rx="72" ry="64" fill="#e9b98e"/>
+          <ellipse cx="100" cy="134" rx="40" ry="29" fill="#fbe7d3"/>
+          <circle cx="74" cy="100" r="7.5" fill="#5b4030"/>
+          <circle cx="126" cy="100" r="7.5" fill="#5b4030"/>
+          <circle cx="76.5" cy="97.5" r="2.4" fill="#fff"/>
+          <circle cx="128.5" cy="97.5" r="2.4" fill="#fff"/>
+          <ellipse cx="57" cy="120" rx="11" ry="7.5" fill="#ffafc6" opacity="0.85"/>
+          <ellipse cx="143" cy="120" rx="11" ry="7.5" fill="#ffafc6" opacity="0.85"/>
+          <ellipse cx="100" cy="124" rx="10" ry="7.5" fill="#7a5238"/>
+          <path d="M100 132 q-9 11 -17 3" fill="none" stroke="#7a5238" stroke-width="4" stroke-linecap="round"/>
+          <path d="M100 132 q9 11 17 3" fill="none" stroke="#7a5238" stroke-width="4" stroke-linecap="round"/>
+          <g transform="translate(100 174)">
+            <g class="bear-heart">
+              <path d="M0 3 C -1 -5 -11 -7 -13 0 C -15 7 -4 14 0 18 C 4 14 15 7 13 0 C 11 -7 1 -5 0 3 Z" fill="#ff5fa2"/>
+              <circle cx="-8" cy="0" r="1.6" fill="#fff" opacity="0.75"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <h1>Скинь мишке денюжку</h1>
+      <p class="sub">Мишка копит на мёд и обнимашки 🍯💕</p>
+    </header>
+
+    <section class="amounts" id="amounts" aria-label="Выбери сумму">
+      <button class="btn heart" data-sum="10" type="button">10 ₽</button>
+      <button class="btn heart" data-sum="50" type="button">50 ₽</button>
+      <button class="btn heart" data-sum="100" type="button">100 ₽</button>
+    </section>
+    <p class="hint" id="hint">Тыкни на сумму — мишка подскажет, куда переводить 🌸</p>
+
+    <section class="phone-block">
+      <span class="phone-label">Перевести по СБП на номер:</span>
+      <div class="phone-row">
+        <span class="phone" id="phone">+7 952 836-38-44</span>
+        <button class="btn mini" id="copyPhone" type="button">Скопировать 💗</button>
+      </div>
+    </section>
+
+    <section class="qr-block">
+      <p class="qr-title">Или отсканируй QR 🌸</p>
+      <div class="qr-frame">
+        <img id="qrImg" src="qr.jpg" alt="QR-код для перевода мишке" width="240" height="240">
+      </div>
+      <p class="qr-note" id="qrNote">Открой банк → «Оплата по QR» → наведи камеру.</p>
+    </section>
+
+    <button class="btn big" id="doneBtn" type="button">Я скинул(а)! 🐾</button>
+    <p class="counter">Милоты собрано: <span id="counterValue">0</span> ₽</p>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
