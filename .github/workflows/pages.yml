@@ -29,6 +29,9 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # включаем Pages автоматически, если он ещё не включён
+          enablement: true
 
       - name: Upload site files (папка money)
         uses: actions/upload-pages-artifact@v3
